@@ -4,11 +4,6 @@ namespace teddymail\yii2rabbitmq;
 
 use Yii;
 use yii\base\Component;
-use AliyunMNS\Exception\MnsException;
-use AliyunMNS\Requests\SendMessageRequest;
-use AliyunMNS\Model\SendMessageRequestItem;
-use AliyunMNS\Requests\BatchSendMessageRequest;
-use AliyunMNS\Requests\BatchReceiveMessageRequest;
 use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Wire\AMQPTable;
 

@@ -12,13 +12,13 @@ Yii2-RabbitMQ 是RabbitMQ的封装
 手动执行
 
 ```
-php composer.phar require koenigseggposche/yii2mns
+php composer.phar composer require teddymail/yii2-rabbitmq
 ```
 
 或者添加
 
 ```
-"koenigseggposche/yii2mns": "*"
+"teddymail/yii2-rabbitmq": "*"
 ```
 
 到工程的 `composer.json` 文件
@@ -29,7 +29,7 @@ php composer.phar require koenigseggposche/yii2mns
 
 ```php
 'mns'=>[
-    'class'=>'koenigseggposche\yii2mns\Mns',
+    'class'=>'teddymail/yii2-rabbitmq/Mns',
     'accessId' => '',
     'accessKey' => '',
     'endpoint' => 'http://.mns.cn-beijing.aliyuncs.com/',
