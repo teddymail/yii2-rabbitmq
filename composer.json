@@ -1,0 +1,28 @@
+{
+    "name": "teddymail/yii2-rabbitmq",
+    "type": "library",
+    "description": "RabbitMQ library for Yii2 framework",
+    "keywords": [
+        "yii2",
+        "yii2-rabbitmq"
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "yuekang",
+            "email": "iyuekang@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0",
+        "yiisoft/yii2": "~2.0",
+        "php-amqplib/php-amqplib": "^2.7",
+        "lspbupt/yii2-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "teddymail\\yii2rabbitmq\\": ""
+        }
+    }
+}
