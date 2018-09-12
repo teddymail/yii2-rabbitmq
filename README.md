@@ -29,10 +29,10 @@ php composer.phar composer require teddymail/yii2-rabbitmq
 
 ```php
 'mns'=>[
-    'class'=>'teddymail/yii2-rabbitmq/Mns',
-    'accessId' => '',
-    'accessKey' => '',
-    'endpoint' => 'http://.mns.cn-beijing.aliyuncs.com/',
+    'class'=>'teddymail/yii2-rabbitmq/RabbitMQ',
+    'user' => '',
+    'passwd' => '',
+    'url' => '192.168.1.3',
 ],
 ```
 
@@ -63,11 +63,4 @@ $contents = [
 \Yii::$app->mns->myqueue->sendBatch($contents);
 ```
 
-批量接收消息:
 
-```php
-$contents = \Yii::$app->mns->myqueue->receiveBatch(100);
-foreach ($contents as $content) {
-    echo $content, "\n";
-}
-```
